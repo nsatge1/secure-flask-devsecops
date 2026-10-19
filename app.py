@@ -1,10 +1,13 @@
-from flask import Flask
+from flask import Flask, jsonify
+
 app = Flask(__name__)
+
 
 @app.route("/")
 def home():
     return "Hello, DevSecOps on AWS!"
 
+
 @app.route("/health")
 def health():
-    return "I have a new service is healthy!"
+    return jsonify(status="ok")
