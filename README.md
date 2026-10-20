@@ -55,13 +55,6 @@ curl http://localhost:5000/health   # {"status":"ok"}
 
 3. In the **Actions** tab, open *CI/CD Flask App* and click **Run workflow** on `main`.
 
-## Roadmap
-
-- [ ] Replace SSH keys with GitHub OIDC + AWS Systems Manager (no long-lived secret, no open port 22)
-- [ ] Push the image to Amazon ECR and scan it there too
-- [ ] Put the app behind HTTPS (Application Load Balancer + ACM certificate)
-- [ ] Infrastructure as code with Terraform
-
 ## License
 
 Apache 2.0
